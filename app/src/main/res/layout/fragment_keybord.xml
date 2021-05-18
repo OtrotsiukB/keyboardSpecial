@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.keybordFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:background="#F44336"
+            android:text="1) .,?!"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/b_4"
+            app:layout_constraintEnd_toStartOf="@+id/b_2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/b_delAll" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_del"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FFD740"
+            android:text="Удалить символ"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/b_delAll"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/b_delAll"
+            app:layout_constraintTop_toTopOf="@+id/b_delAll" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_delAll"
+
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+
+            android:background="@color/teal_200"
+            android:text="Очистить"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/b_1"
+            app:layout_constraintEnd_toStartOf="@+id/b_del"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#B3AFAF"
+            android:text="0) Пробел"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/b_send"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/b_7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_send"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="#3F51B5"
+            android:text="Отправить"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/b_0"
+            app:layout_constraintTop_toTopOf="@+id/b_0"
+            app:rippleColor="#FFEB3B" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#151515"
+            android:text="9) ЬЭЮЯ"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/b_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/b_8"
+            app:layout_constraintTop_toTopOf="@+id/b_8" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="#1A237E"
+            android:text="8) ШЩЪЫ"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/b_7"
+            app:layout_constraintEnd_toStartOf="@+id/b_9"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/b_7"
+            app:layout_constraintTop_toTopOf="@+id/b_7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:background="#E64A19"
+            android:text="7) ФХЧЦ"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/b_0"
+            app:layout_constraintEnd_toStartOf="@+id/b_8"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/b_4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:background="#4CAF50"
+            android:text="4) ИЙКЛ"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/b_7"
+            app:layout_constraintEnd_toStartOf="@+id/b_5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/b_1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="#FFEB3B"
+            android:text="5) МНОП"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/b_4"
+            app:layout_constraintEnd_toStartOf="@+id/b_6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/b_4"
+            app:layout_constraintTop_toTopOf="@+id/b_4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#D81B60"
+            android:text="6) РСТУ"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/b_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/b_5"
+            app:layout_constraintTop_toTopOf="@+id/b_5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#3F51B5"
+            android:text="3) ДЕЖЗ"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/b_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/b_2"
+            app:layout_constraintTop_toTopOf="@+id/b_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="#9C27B0"
+            android:text="2) АБВГ"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/b_1"
+            app:layout_constraintEnd_toStartOf="@+id/b_3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/b_1"
+            app:layout_constraintTop_toTopOf="@+id/b_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

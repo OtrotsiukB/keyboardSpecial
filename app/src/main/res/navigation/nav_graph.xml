@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/keybordFragment">
+
+    <fragment
+        android:id="@+id/keybordFragment"
+        android:name="com.k7.keyboardvika.ui.keybordFragment"
+        android:label="fragment_keybord"
+        tools:layout="@layout/fragment_keybord" >
+        <action
+            android:id="@+id/action_keybordFragment_to_keyboardDetallFragment"
+            app:destination="@id/keyboardDetallFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/keyboardDetallFragment"
+        android:name="com.k7.keyboardvika.ui.keyboardDetallFragment"
+        android:label="fragment_keyboard_detall"
+        tools:layout="@layout/fragment_keyboard_detall" >
+        <argument
+            android:name="chars"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_keyboardDetallFragment_to_keybordFragment"
+            app:destination="@id/keybordFragment" />
+    </fragment>
+</navigation>
